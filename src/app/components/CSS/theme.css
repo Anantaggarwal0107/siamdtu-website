@@ -1,0 +1,500 @@
+:root {
+    --dark: #0B356D;
+    --white: #FFFFFF;
+    --text-col: #595959;
+    --primary: #D52C2E;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-col);
+  }
+  
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #717ff5;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Nunito", sans-serif;
+  }
+  
+/*--------------------------------------------------------------
+  # Sections
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+  
+  .section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+  
+  @media (max-width: 768px) {
+    .section-header p {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  
+
+/*---------------------------------
+#Header
+-------------------------------*/
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.nav-brand{
+  position: absolute;
+  left: 8%;
+  top: 10px;
+}
+.nav-dtu-logo{
+  position: absolute;
+  right: 8%;
+  top: 9px;
+}
+.navbar nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar nav ul li{
+  display: inline-block;
+  margin: 20px;
+  color:var(--dark);
+}
+
+.navbar nav ul li a{
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.navbar nav ul li a:hover{
+  border-bottom: 5px solid var(--primary);
+}
+
+.mobile-navbar{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  opacity:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-navbar nav ul{
+  border-top:5px solid var(--primary); ;
+  list-style: none;
+  position: absolute;
+  top: 80px;
+  justify-content: center;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+.mobile-navbar nav ul li{
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  padding-left: 10px;
+  color:var(--dark);
+}
+
+.mobile-navbar nav ul li a{
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.mobile-navbar nav ul li a:hover{
+  color:var(--primary);
+}
+.mobile-navbar nav ul li:hover{
+  color:var(--primary);
+}
+
+.menu-icon{
+  font-size: 40px;
+  cursor: pointer;
+  color:var(--dark);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+  
+/*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+#hero{
+  background: url("../../assets/DTU.png");
+  background-size: cover;
+}
+  
+.hero {
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+}
+.hero-container{
+  background-color:rgba(0, 0, 0,0.38)
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2.6em;
+    font-weight: 700;
+    color: var(--dark);
+}
+  
+.hero h2 {
+    color: red;
+    margin: 15px 0 15px 0;
+    font-weight: bold;
+    font-size: 2.1em;
+}
+.hero p{
+  font-size: 1.4em;
+  color: var(--white);
+}
+
+  
+@media (min-width: 1024px) {
+    .hero {
+        background-attachment: fixed;
+    }
+}
+  
+@media (max-width: 991px) {
+    .hero {
+        height: auto;
+        padding: 120px 0 60px 0;
+    }
+}
+  
+@media (max-width: 768px) {
+  
+    .hero h1 {
+        font-size: 32px;
+    }
+  
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Goal Section
+  --------------------------------------------------------------*/
+
+.goal{
+  padding: 5% 5% 0 5%;
+}
+
+.goal .container-fluid{
+  background-color: #F0FBF8;
+  padding: 3%;
+  border-radius: 60px;
+}
+.goal .section-header{
+  align-items: center;
+  justify-content: center;
+}
+
+.goal .section-header p{
+  color:#00B884;
+}
+
+.goal ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.goal ul li{
+  color:#062E26;
+  padding: 3% 0 3% 0;
+}
+
+/*--------------------------------------------------------------
+  # Mission Section
+  --------------------------------------------------------------*/
+
+.mission{
+  padding: 5%;
+}
+
+.mission .container-fluid{
+  background-color: #FFF6FA;
+  padding: 3%;
+  border-radius: 60px;
+}
+.mission .section-header{
+  align-items: center;
+  justify-content: center;
+}
+
+.mission .section-header p{
+  color:#FD71AF;
+}
+
+.mission ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.mission ul li{
+  color:#062E26;
+  padding: 3% 0 3% 0;
+}
+
+/*--------------------------------------------------------------
+  # Footer Section
+  --------------------------------------------------------------*/
+
+#footer{
+  background-color: var(--dark);
+  color:var(--white);
+  margin-bottom: 0;
+}
+
+.contact-text{
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 2px 0 0 0;
+}
+
+.social-media-links{
+  color:var(--white);
+  font-size:1.8em;
+  margin: 0 6px 0 0;
+}
+
+.social-media-links:hover{
+  font-size: 2.0em;
+}
+
+.copyright-text{
+  font-size:0.8em;
+  color:#f3f3f3;
+  margin:4px 0 0 0;
+}
+/*--------------------------------------------------------------
+  # Team
+  --------------------------------------------------------------*/
+
+
+.section-title{
+  font-weight: 400;
+    font-size: 30px;
+    color: #3B566E;
+    letter-spacing: 1.30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+}  
+
+.team-name{
+  text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #3B566E;
+    
+}
+
+.team-img{
+  width: 160px;
+    height: 160px;
+    overflow: hidden;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+
+}
+/* .team-img:hover{
+  
+  opacity: 0.3;
+  transition: all ease .1s;
+  border:3px solid grey;
+  cursor: pointer;
+} */
+
+
+.team-role{
+  display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F8BA4;
+}
+
+.team-bg{
+  background: url(https://www.freeiconspng.com/thumbs/snowflakes-png/white-snowflakes-png-9.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+  
+
+
+.council-team{
+  display : flex; 
+  flex-flow: row wrap;
+  justify-content : space-evenly; 
+
+  width: 100%;
+  align-content   : center;
+  text-align: center;
+  
+}
+
+.team-img:hover{
+  opacity: 0.3;
+  transition: all ease .1s;
+  border:3px solid grey;
+  cursor: pointer;
+  
+}
+
+  /*--------------------------------------------------------------
+  # EventCard
+  --------------------------------------------------------------*/
+  .eventCard{
+    padding: 5%;
+  }
+  
+  .eventCard .container-fluid{
+    padding: 3%;
+    border-radius: 60px;
+  }
+  .eventCard .section-header{
+    font-size: 1.3em;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eventCard ul{
+    list-style: none;
+    padding-top: 2%;
+    margin: 0;
+    font-size: 1.05em;
+    color: black;
+    font-weight: 700;
+    padding-left: 2%;
+  }
+  
+  .eventCard ul li{
+    color:#062E26;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .eventCard .eventCard-image{
+    border-radius: 50%;
+  
+  }
+  .eventCard .eventCard-div{
+    padding-bottom: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+/*--------------------------------------------------------------
+  # eventhome
+  --------------------------------------------------------------*/
+  .eventhome {
+    width: 100%;
+    text-align: left;
+    height: 100vh;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+    background-image: url(../../assets/DTU.png);
+    background-size: 2000px 800px;
+  }
+
+.eventhome h1 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 3em;
+  font-weight: 700;
+  color:#ffffff;
+}
+.eventhome h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 2.2em;
+  font-weight: 700;
+  color:#ffffff;
+}
+
+.eventhome ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.eventhome ul li{
+  color:#062E26;
+  padding-bottom: 2%;
+  
+}
+
+.text-main{
+  color: var(--dark);
+  font-weight: bolder;
+}
